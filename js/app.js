@@ -34,12 +34,21 @@ operators.forEach((op) => {
 // while the equal button clicks
 const equalButton = document.querySelector('.equal')
 equalButton.addEventListener('click', () => {
-   // calculating values
-   calculation()
-   previousScreen.textContent += ' ' + currentValue
-   currentScreen.textContent = previousValue
-   currentValue = ''
-   currentValue = previousValue
+   // check the values are true
+   if (!previousValue == '' && !currentValue == '') {
+      // calculating values
+      calculation()
+      previousScreen.textContent += ' ' + currentValue
+      if (previousValue.length <= 19) {
+         currentScreen.textContent = previousValue
+         currentValue = ''
+         currentValue = previousValue
+      } else {
+         currentScreen.textContent = previousValue.slice(0,10) + "..."
+         currentValue = ''
+         currentValue = previousValue
+      }
+   }
 })
 
 // while the clear button clicks
