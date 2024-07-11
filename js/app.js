@@ -31,6 +31,22 @@ operators.forEach((op) => {
    })
 })
 
+// while the equal button clicks
+const equalButton = document.querySelector('.equal')
+equalButton.addEventListener('click', () => {
+   // calculating values
+   calculation()
+})
+
+// while the clear button clicks
+const clearButton = document.querySelector('.clear-btn')
+clearButton.addEventListener('click', () => {
+   previousValue = ''
+   currentValue = ''
+   previousScreen.textContent = previousValue
+   currentScreen.textContent = currentValue
+})
+
 // operating number when it clicks
 function operatingNumbers(num) {
    // check the length of entered values
@@ -47,5 +63,30 @@ function operatingOperators(ope) {
    previousValue = currentValue
    // make current value to empty 
    currentValue = ''
+}
+
+// calculating values
+function calculation() {
+   // make string to numbers
+   previousValue = parseFloat(previousValue)
+   currentValue = parseFloat(currentValue)
+
+   // checking the operator
+   switch(operator) {
+      case '/':
+         previousValue /= currentValue
+         break
+      case 'X':
+         previousValue *= currentValue
+         break
+      case '-':
+         previousValue -= currentValue
+         break
+      case '+':
+         previousValue += currentValue
+         break
+   }
+
+   console.log(`result is ${previousValue}`)
 }
 
