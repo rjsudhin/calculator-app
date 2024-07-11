@@ -22,11 +22,15 @@ const operators = document.querySelectorAll('.operator')
 operators.forEach((op) => {
    op.addEventListener('click', (e) => {
       console.log(e.target.textContent)
-      let ope = e.target.textContent
-      operatingOperators(ope)
-      // showing values and operator
-      previousScreen.textContent = previousValue + ' ' + operator
-      currentScreen.textContent = currentValue
+      if (!currentValue == '') {
+         let ope = e.target.textContent
+         operatingOperators(ope)
+         // showing values and operator
+         previousScreen.textContent = previousValue + ' ' + operator
+         currentScreen.textContent = currentValue
+      } else {
+         console.log('please enter a number button first')
+      }
       
    })
 })
