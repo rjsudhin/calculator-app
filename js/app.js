@@ -6,6 +6,7 @@ let operator = ''
 const previousScreen = document.querySelector('.previous-screen')
 const currentScreen = document.querySelector('.current-screen')
 
+// while the number clicks
 const numbers = document.querySelectorAll('.number')
 numbers.forEach(number => {
    number.addEventListener('click', (e) => {
@@ -17,7 +18,7 @@ numbers.forEach(number => {
 })
 
 function operatingNumbers(num) {
-   if (currentValue.length <= 9) {
+   if (currentValue.length < 9) {
       currentValue += num
    }
 }
