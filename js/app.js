@@ -92,5 +92,14 @@ function calculation() {
    }
 
    console.log(`result is ${previousValue}`)
+   // make numbers to round maximum
+   previousValue = makeNumberRound(previousValue)
+   // make numbers to string
+   previousValue = previousValue.toString()
+   currentValue = currentValue.toString()
+}
+
+function makeNumberRound(num) {
+   return Math.round(num * 1000) / 1000
 }
 
