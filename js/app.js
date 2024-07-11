@@ -64,6 +64,12 @@ clearButton.addEventListener('click', () => {
    currentScreen.textContent = currentValue
 })
 
+// while the decimal button clicks
+const decimalButton = document.querySelector('.decimal')
+decimalButton.addEventListener('click', () => {
+   addingDecimal()
+})
+
 // operating number when it clicks
 function operatingNumbers(num) {
    // check the length of entered values
@@ -80,6 +86,13 @@ function operatingOperators(ope) {
    previousValue = currentValue
    // make current value to empty 
    currentValue = ''
+}
+
+// adding decimal when the button clicks
+function addingDecimal() {
+   if (!currentValue.includes('.')) {
+      currentValue += '.'
+   }
 }
 
 // calculating values
