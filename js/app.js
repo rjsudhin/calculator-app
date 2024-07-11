@@ -36,6 +36,10 @@ const equalButton = document.querySelector('.equal')
 equalButton.addEventListener('click', () => {
    // calculating values
    calculation()
+   previousScreen.textContent += ' ' + currentValue
+   currentScreen.textContent = previousValue
+   currentValue = ''
+   currentValue = previousValue
 })
 
 // while the clear button clicks
