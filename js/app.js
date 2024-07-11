@@ -17,8 +17,11 @@ numbers.forEach(number => {
    })
 })
 
+// operating number when it clicks
 function operatingNumbers(num) {
+   // check the length of entered values
    if (currentValue.length < 9) {
       currentValue += num
    }
 }
+
