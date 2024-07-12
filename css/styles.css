@@ -15,19 +15,20 @@ body {
 }
 
 #calculator {
-   border: 1px solid black;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
    padding: 20px 10px;
+   background-color: #252525b4;
+   border-radius: 1em;
 }
 
 #header-row {
    width: 260px;
    display: flex;
    justify-content: space-between;
-   margin-top: 10px;
+   margin: 10px 0;
 }
 
 
@@ -35,8 +36,13 @@ body {
 #header-row #screen {
    width: 188px;
    height: 50px;
-   border: 1px solid black;
+   background-color: rgb(61, 85, 105);
+   border-radius: 1em;
+   padding: 5px;
+   box-shadow: 0 0 10px 1px rgb(13, 13, 14);
+   color: #eee;
 }
+
 
 .row {
    margin: 10px 20px;
@@ -46,8 +52,49 @@ body {
 }
 
 
-
 button {
    width: 50px;
    height: 50px;
+   border-radius: 30%;
+   border: none;
+   color: #706363;
+}
+
+button:hover {
+   cursor: pointer
+}
+
+.number, .decimal {
+   background-color: rgb(151, 224, 133);
+   box-shadow: 1px 1px 3px 1px #2525259f;
+}
+
+.number:active, .decimal:active {
+   background-color: rgb(102, 196, 79);
+}
+
+.clear-btn {
+   background-color: lightcoral;
+   box-shadow: 1px 1px 3px 1px rgb(53, 49, 49);
+   color: #eee;
+}
+
+.clear-btn:active {
+   background-color: rgb(228, 76, 76);
+}
+
+.operator {
+   background-color: rgb(211, 144, 118);
+   color: #eee;
+   box-shadow: 1px 1px 3px 1px rgb(53, 49, 49);
+}
+
+.operator:active {
+   background-color: rgb(167, 83, 50);
+}
+
+.equal {
+   background-color: rgb(147, 188, 202);
+   color: #eee;
+   box-shadow: 1px 1px 3px 1px rgb(53, 49, 49);
 }
