@@ -12,6 +12,11 @@ body {
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   background-color: #2525259f;
+}
+
+#title {
+   display: none;
 }
 
 #calculator {
@@ -22,6 +27,7 @@ body {
    padding: 20px 10px;
    background-color: #252525b4;
    border-radius: 1em;
+   box-shadow: 1px 1px 3px 0#252525b4;
 }
 
 #header-row {
