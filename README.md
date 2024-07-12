@@ -15,6 +15,6 @@ This project implements a basic calculator with addition, subtraction, multiplic
 **License** : Distributed under the MIT License
 
 **Contact** 
-Project Link: https://rjsudhin.github.io/calculator-app/
+**Project Link**: https://rjsudhin.github.io/calculator-app/
 
 Customize this template based on your project specifics and preferences. This README.md file serves as a starting point to document your simple calculator project effectively.
