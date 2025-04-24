@@ -18,10 +18,18 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-image: url('../images/cal.jpg');
+  background-size: auto; /* keep the whole image visible */
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #calculator-app {
-  border: 2px solid black;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px); 
+  -webkit-backdrop-filter: blur(10px); /* for Safari */
+  box-shadow: 3px 4px 30px rgba(31, 30, 30, 0.1); /* soft shadow */
+  /* border: 1px solid rgba(20, 20, 20, 0.3);  */
   padding: 2rem 1rem;
   .section {
     width: 250px;
