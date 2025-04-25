@@ -22,10 +22,11 @@ AllNumbers.forEach((number) => {
 })
 
 // operators clicks
-allOperators.forEach((operator) => {
-  operator.addEventListener('mousedown', (e) => {
+allOperators.forEach((op) => {
+  op.addEventListener('mousedown', (e) => {
     handlingOperator(e.target.textContent)
-    currentDisplay.textContent = previousValue
+    previousDisplay.textContent = previousValue + ' ' + operator 
+    currentDisplay.textContent = currentValue
   })
 })
 
@@ -41,7 +42,7 @@ function handlingNumber(num) {
 
 // handling when the operator clicks
 function handlingOperator(op) {
-  operator = op
   previousValue = currentValue
   currentValue = ''
+  operator = op
 }
