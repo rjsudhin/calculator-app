@@ -45,6 +45,15 @@ equal.addEventListener('mousedown', () => {
   }
 })
 
+// clear button setup
+clearBtn.addEventListener('mousedown', (e) => {
+  previousValue = ''
+  currentValue = ''
+  operator = ''
+  previousDisplay.textContent = previousValue
+  currentDisplay.textContent = currentValue
+})
+
 function calculatingValues() {
   // converting string to number
   previousValue = parseFloat(previousValue)
