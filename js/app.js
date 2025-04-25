@@ -30,6 +30,30 @@ allOperators.forEach((op) => {
   })
 })
 
+// calculation configure
+equal.addEventListener('mousedown', () => {
+  // converting string to number
+  previousValue = parseFloat(previousValue)
+  currentValue = parseFloat(currentValue)
+  // getting the calculation
+  switch (operator) {
+    case '/': 
+      previousValue /= currentValue
+      break
+    case 'x':
+      previousValue *= currentValue
+      break
+    case '+':
+      previousValue += currentValue
+      break
+    case '-':
+      previousValue -= currentValue
+      break
+  }
+
+  console.log(previousValue)
+})
+
 
 // handling when the numbers clicks
 function handlingNumber(num) {
