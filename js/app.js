@@ -54,8 +54,12 @@ equal.addEventListener('mousedown', () => {
 
   // round the maximum values
   previousValue = roundMaximumValue(previousValue)
+  
+  //back to convert numbers to string
+  previousValue = previousValue.toString()
+  currentValue = currentValue.toString()
+  
   console.log(previousValue)
-
 })
 
 // rounding numbers
