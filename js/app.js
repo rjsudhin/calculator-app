@@ -51,8 +51,17 @@ equal.addEventListener('mousedown', () => {
       break
   }
 
+
+  // round the maximum values
+  previousValue = roundMaximumValue(previousValue)
   console.log(previousValue)
+
 })
+
+// rounding numbers
+function roundMaximumValue(num) {
+  return Math.round(num * 1000) / 1000
+}
 
 
 // handling when the numbers clicks
