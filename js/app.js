@@ -32,6 +32,18 @@ allOperators.forEach((op) => {
 
 // calculation configure
 equal.addEventListener('mousedown', () => {
+  calculatingValues()
+  previousDisplay.textContent += ' ' + currentValue
+  currentDisplay.textContent = '= ' + previousValue
+  currentValue = previousValue 
+  previousValue = ''
+  if (currentDisplay.textContent.length > 8) {
+    let result = currentDisplay.textContent.slice(0,8) + '...'
+    currentDisplay.textContent = result
+  }
+})
+
+function calculatingValues() {
   // converting string to number
   previousValue = parseFloat(previousValue)
   currentValue = parseFloat(currentValue)
@@ -51,16 +63,15 @@ equal.addEventListener('mousedown', () => {
       break
   }
 
-
   // round the maximum values
   previousValue = roundMaximumValue(previousValue)
   
   //back to convert numbers to string
   previousValue = previousValue.toString()
   currentValue = currentValue.toString()
-  
+
   console.log(previousValue)
-})
+}
 
 // rounding numbers
 function roundMaximumValue(num) {
