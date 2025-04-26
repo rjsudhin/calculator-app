@@ -47,6 +47,7 @@ body {
       width: 185px;
       height: 50px;
       border-radius: 0.9rem;
+      background: rgb(28, 32, 28);
       div {
         padding-right: 0.5rem;
         display: flex;
@@ -56,11 +57,13 @@ body {
       }
       .previous-display {
         font-size: 0.9em;
+        color: #aaa0a0;
       }
 
       .current-display {
         font-size: 1rem;
         font-weight: bold;
+        color: #fff;
       }
     }
     button {
