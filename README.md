@@ -29,4 +29,12 @@ A stylish and fully functional calculator built as part of [The Odin Project](ht
 ## 🔥 Future Improvements
 - Add keyboard support
 - Light and dark theme toggle
+
+---
+
+### 💻 Made with
+
+![Built with Love & JavaScript](https://img.shields.io/badge/Built%20with-%E2%9D%A4%EF%B8%8F%20%26%20JavaScript-yellow?style=for-the-badge&logo=javascript)
+![Made by Sudhin](https://img.shields.io/badge/Made%20by-Sudhin-blueviolet?style=for-the-badge&logo=github)
+
 - Improve decimal precision handling
