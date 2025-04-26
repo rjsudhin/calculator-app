@@ -33,14 +33,16 @@ allOperators.forEach((op) => {
 // calculation configure
 equal.addEventListener('mousedown', () => {
   if (!(previousValue === '')) {
-    calculatingValues()
-    previousDisplay.textContent += ' ' + currentValue
-    currentDisplay.textContent = '= ' + previousValue
-    currentValue = previousValue 
-    previousValue = ''
-    if (currentDisplay.textContent.length > 8) {
-      let result = currentDisplay.textContent.slice(0,8) + '...'
-      currentDisplay.textContent = result
+    if (!(previousValue == NaN && currentValue == NaN)) {
+      calculatingValues()
+      previousDisplay.textContent += ' ' + currentValue
+      currentDisplay.textContent = '= ' + previousValue
+      currentValue = previousValue 
+      previousValue = ''
+      if (currentDisplay.textContent.length > 8) {
+        let result = currentDisplay.textContent.slice(0,8) + '...'
+        currentDisplay.textContent = result
+      }
     }
   }
 })
