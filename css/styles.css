@@ -45,11 +45,10 @@ body {
     margin: 0.5rem 0;
 
     #display-screen {
-      border: 1px solid black;
       width: 185px;
       height: 50px;
       border-radius: 0.9rem;
-      background: rgb(28, 32, 28);
+      background: rgb(32, 36, 32);
 
       div {
         padding-right: 0.5rem;
