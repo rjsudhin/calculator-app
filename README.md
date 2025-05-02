@@ -9,7 +9,8 @@ A stylish and fully functional calculator built as part of [The Odin Project](ht
 - Clean and modular JavaScript code
 
 ## 📸 Preview
-![Calculator Preview](./screenshot.png)
+![Calculator Preview]
+https://rjsudhin.github.io/calculator-app/
 
 ## 🛠️ Built With
 - HTML5
